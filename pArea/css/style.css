@@ -1,0 +1,41 @@
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;font-weight:normal;}
+html,body,fieldset,img,iframe,abbr{border:0;}
+i,cite,em,var,address,dfn{font-style:normal;}
+[hidefocus],summary{outline:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,small{font-size:100%;}
+sup,sub{font-size:83%;}
+pre,code,kbd,samp{font-family:inherit;}
+q:before,q:after{content:none;}
+textarea{overflow:auto;resize:none;}
+label,summary{cursor:default;}
+a,button{cursor:pointer;}
+h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:bold;}
+del,ins,u,s,a,a:hover{text-decoration:none;}
+body,textarea,input,button,select,keygen,legend{font:12px/1.14 'Microsoft Yahei',arial,\5b8b\4f53;color:#333;outline:0;}
+body{background:#fff;}
+a,a:hover{color:#333;}
+
+h3.title{margin:100px auto 0;line-height: 30px;width:600px;font-size: 20px;padding-bottom: 20px;}
+.postArea{width:600px;position:relative;margin:10px auto;}
+.areaTitle{float:left;width:50px;height:24px;line-height: 24px;text-align: center;}
+.areaWrapper{float:left;height: 24px;line-height: 24px;border: 1px solid #ccc;text-align: center;padding: 0 20px 0 10px;cursor: pointer;font-size: 12px;position:relative;}
+.areaWrapper .arr{position:absolute;top:10px;right:8px;display:inline-block;width: 0;height: 0;font-size: 0;line-height: 0;border-color: #666 transparent transparent;border-style: solid dashed dashed;border-width: 4px 4px 0;}
+.areaFreight{float:left;margin-left: 10px;line-height: 24px;}
+/*地址弹窗*/
+.addrBox{position:absolute;color:#000;padding:10px 0;border:#DDD solid 1px;background-color:#FFF;width:440px;display:none;left:0;top:38px;z-index:8888;box-shadow:0 1px 2px 0 rgba(0, 0, 0, .15);}
+.addrBox>b{position:absolute;right:15px;top:10px;width:16px;height:16px;cursor:pointer;background:url(../img/close.png) no-repeat;}
+.addrBox .addrbox-triup{position:absolute;left:150px;top:-8px;width:16px;height:8px;overflow:hidden;background-image:url(../img/tip.png);background-repeat:no-repeat;}
+.addrBox a{padding:0 8px;white-space:nowrap;word-break:keep-all;color:#000;outline:none;line-height:28px;height:28px;display:inline-block;border-radius: 3px;}
+.addrBox a:visited{color:#000;}
+.addrBox a:hover,.addrBox .selected a{color:#FFF;background-color:#b4a078;text-decoration:none;}
+.addrBox .addrbox-title{height:34px;width:100%;padding-left:10px;overflow:hidden;}
+.addrBox .addrbox-titlew{border-bottom:1px solid #ddd;height:28px;width:420px;}
+.addrBox .tli{float:left;line-height:24px;height:24px;padding:0 5px;min-width:60px;width:auto;text-align:center;position:relative;cursor:pointer;background:#fff;font-size: 14px;}
+.addrBox .tli.act{background:#fff;height:24px;color:#b4a078;}
+.addrbox-titlew li:first-child{border-right: 1px solid #ddd;}
+.addrList{float:left;overflow:hidden;padding-left:10px;width:420px;}
+.addrList span{float:left;min-width:70px;margin:5px 0 0;cursor:pointer;display:inline-block;font-size:13px;text-align: center;}

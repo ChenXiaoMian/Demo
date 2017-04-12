@@ -11,10 +11,10 @@ var PArea = function(options){
         addrtitle = $('<div class="addrbox-title"></div>'),
         addrtitleUl = $('<ul class="addrbox-titlew"></ul>'),
         addrList = $('<div class="addrList clearfix"></div>'),
-        addrParent = $(".dlytmpl");
+        addrParent = $(".postArea");
     // 定义常用变量
-    var domSelect = $(".toWrap .to"),
-        domPost = $("#dlytmpl-post");
+    var domSelect = $(".areaWrapper .to"),
+        domPost = $(".areaFreight");
     // 初始化
     var init = function(){
         self.options = $.extend(self.options,options);
@@ -76,7 +76,7 @@ var PArea = function(options){
                     tempList += "<span class='city'><a href='javascript:;' provId="+provId+" data-id="+citytemp[j].id+">"+citytemp[j].value+"</a></span>";
                 });
             }
-            $(".toWrap .to").text(str);
+            $(".areaWrapper .to").text(str);
             console.log(tempTitle);
             console.log(tempList);
             renderData(tempTitle,tempList);
@@ -93,7 +93,7 @@ var PArea = function(options){
         addrtitleUl.appendTo(addrtitle);
         addrtitle.appendTo(addrBox);
         addrList.appendTo(addrBox);
-        $(".dlytmpl").append(addrBox);
+        $(".postArea").append(addrBox);
         domPost.show();
         
     };
@@ -164,7 +164,7 @@ var PArea = function(options){
         var domProv = $(".addrbox-titlew").find("li").eq(0),
             domArea = $(".addrbox-titlew").find("li").eq(1);
 
-        $(".dlytmpl .toWrap").on('click',function(e){
+        $(".postArea .areaWrapper").on('click',function(e){
             e.stopPropagation();
             addrBox.show();
             processData(self.options.data);
@@ -172,7 +172,7 @@ var PArea = function(options){
             $(".addrList span").removeClass('selected');
         });
         $(document).click(function(e){
-          var _con = $(".dlytmpl .toWrap");   // 设置目标区域
+          var _con = $(".postArea .areaWrapper");   // 设置目标区域
           if(!_con.is(e.target) && _con.has(e.target).length === 0){
             addrBox.hide();
           }else{
