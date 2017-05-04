@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>javascript版策略模式</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var strategies = {
+        "S" : function(salary){
+          return salary * 4;
+        },
+        "A" : function(salary){
+          return salary * 3;
+        },
+        "B" : function(salary){
+          return salary * 2;
+        }
+      }
+
+      var calculateBonus = function(level,salary){
+        return strategies[level](salary);
+      };
+
+      console.log(calculateBonus('S',20000));
+      console.log(calculateBonus('A',10000));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>通用惰性单例</title>
+  </head>
+  <body>
+    <button type="button" id="loginBtn" name="button">登录</button>
+    <script type="text/javascript">
+      var getSingle = function(fn){
+        var result;
+        return function(){
+          return result || (result = fn.apply(this,arguments));
+        }
+      }
+
+      var createLoginLayer = function(){
+        var div = document.createElement('div');
+        div.innerHTML = '我是登录窗口';
+        div.style.display = 'none';
+        document.body.appendChild(div);
+        return div;
+      }
+
+      var createSingleLoginLayer = getSingle(createLoginLayer);
+
+      document.getElementById('loginBtn').onclick = function(){
+        var loginLayer = createSingleLoginLayer();
+        loginLayer.style.display = 'block';
+      }
+    </script>
+  </body>
+</html>

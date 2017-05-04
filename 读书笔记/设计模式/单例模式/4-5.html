@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>惰性单例</title>
+  </head>
+  <body>
+    <button type="button" id="loginBtn" name="button">登录</button>
+    <script type="text/javascript">
+      var createLoginLayer = (function(){
+        var div;
+        return function(){
+          if(!div){
+            div = document.createElement('div');
+            div.innerHTML = '我是登录浮窗';
+            div.style.display = 'none';
+            document.body.appendChild(div);
+          }
+          return div;
+        }
+      })();
+
+      var loginBtn = document.getElementById('loginBtn');
+      loginBtn.onclick = function(){
+        var loginLayer = createLoginLayer();
+        loginLayer.style.display = 'block';
+      }
+    </script>
+  </body>
+</html>
