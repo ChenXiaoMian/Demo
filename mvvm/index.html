@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>MVVM</title>
+    <script type="text/javascript" src="dep.js"></script>
+    <script type="text/javascript" src="observe.js"></script>
+    <script type="text/javascript" src="compile.js"></script>
+    <script type="text/javascript" src="watcher.js"></script>
+    <script type="text/javascript" src="mvvm.js"></script>
+</head>
+<body>
+    <div id="demo">{{a}}</div>
+    <script type="text/javascript">
+    var vm2 = new MVVM({
+        el: '#demo',
+        data: {
+            a: 'hello world'
+        }
+    });
+    </script>
+</body>
+</html>
