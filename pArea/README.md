@@ -2,4 +2,6 @@
 
 电商网站中经常遇到计算根据地区获取邮费的情况，于是参考网易考拉写了这个地区选择3级联动，城市选择器。(htmlpreview.github.io无法使用$.get获取数据，只能直接把数据写在js上)
 
-[直接上demo](http://htmlpreview.github.io/?https://github.com/ChenXiaoMian/demo/blob/master/pArea/index.html)
+[直接点击demo](http://htmlpreview.github.io/?https://github.com/ChenXiaoMian/demo/blob/master/pArea/index.html)
+
+记录一下~

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>jquery jcrop 图像裁剪</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.Jcrop.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jcrop.css">
+</head>
+<body>
+    <div class="page-header">
+        <div class="page-header-main">
+            <h1>jquery jcrop 图像裁剪</h1>
+        </div>
+    </div>
+    <div class="page-body">
+        <p>点击上传图片，如果图片比例是1:1，就直接上传，否则需要进行裁剪操作。</p>
+        <p>照片支持jpg、gif、bmp、png格式，每张图片不超过2MB。</p>
+        <input class="openFi" type="file" name="imgFile" id="openFi" accept="image/jpg,image/jpeg,image/png,image/bmp,image/gif" />
+    </div>
+    <!-- 图片裁剪 -->
+    <div class="image-crop-upload">
+        <div class="icp-wrap">
+            <div class="icp-close"><i class="icp-icon-close"></i></div>
+            <div class="icp-step2">
+                <div class="icp-left">
+                    <div class="icp-img-container">
+                        <img class="icp-img" src="" id="cropTarget">
+                    </div>
+                    <!-- <div class="icp-img-operation">
+                        <a href="javascript:void(0);" class="icp-btn btn-acw"></a>
+                        <div class="icp-range">
+                            <a href="javascript:void(0);" class="icp-btn btn-shrink"></a>
+                            <input type="range" id="rangeZoom" step="1" min="0" max="100" value="0">
+                            <a href="javascript:void(0);" class="icp-btn btn-magnify"></a>
+                        </div>
+                        <a href="javascript:void(0);" class="icp-btn btn-cw"></a>
+                    </div> -->
+                </div>
+                <div class="icp-right">
+                    <div class="icp-img-preview">
+                        <div class="icp-preview-item" id="preview">
+                            <img src="" class="jcrop-preview" alt="">
+                        </div>
+                        <p class="icp-preview-text">图片预览</p>
+                    </div>
+                    <div class="icp-operate">
+                        <a class="icp-operate-cancel">取消</a>
+                        <a class="icp-operate-save">保存</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.Jcrop.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
