@@ -1,0 +1,148 @@
+/* map */
+.map-wrapper{width: 100%;border-top:2px solid #cb0210;}
+.search-wrapper{width: 360px;position: absolute;left:40px;top:40px;z-index: 10;/* box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3); */-webkit-transition:all .1s;transition:all .1s;}
+.search-wrapper.hide{width: 0;}
+.search-wrapper.hide .result-panel,.search-wrapper.hide .search-panel,.search-wrapper.hide .search-item{display:none;}
+.search-button.hide{left:0;}
+.search-button{display:block;width: 20px;height: 60px;text-align:center;border:1px solid #eee;position:absolute;left:360px;top:50%;margin-top:-30px;line-height:60px;background:#fff;box-shadow: 3px 0px 10px 0px rgba(0,0,0,0.3);-webkit-border-radius:1px;border-radius:1px;z-index:5;}
+.search-button .iconfont{font-size: 18px;font-weight:bold;color:#999;}
+.search-button:hover{background:#EBEBEB;}
+.search-button:hover .iconfont{color:#d6000f;}
+.search-panel{width: 360px;height: 60px;padding:10px;background: #fff;box-shadow: 0px 0px 8px #d6d5d2;box-sizing:border-box;}
+
+.search-form{margin-bottom: 8px;}
+.search-input{border:1px solid #d6000f;width: 340px;height: 40px;float: left;}
+.search-input .input-text{width: 300px;height: 40px;line-height: 20px;padding:10px;display: block;box-sizing:border-box;border:0;float: left;font-size: 14px;color:#000;}
+.search-input .btn-search{width: 40px;height: 40px;border:0;display: block;float:left;background: #d6000f;color:#fff;}
+
+.gap-checkbox{padding:15px 10px 0;float: right;position:absolute;top:10px;right:0;}
+
+.input-select{display: block;width: 106px;position: relative;height: 40px;z-index:99}
+.input-select>label{width: 94px;height: 28px;padding:6px;border:1px solid #e9e7e7;display: block;line-height: 28px;font-size: 14px;color: #333;background: #fff;}
+.input-select>ul{width: 100%;z-index: 10;border: 1px solid #E8E8E8;background: #f6f5f5;border-top: 0;display: none;max-height: 500px;overflow-y:auto;overflow-x:hidden;}
+.input-select>ul>li>a{display: block;height: 24px;line-height: 24px;padding: 0 6px;width:89px;overflow: hidden;white-space:nowrap;text-overflow:ellipsis;}
+.input-select>ul>li>a:hover{background: #e5e3e0;}
+.input-select>label>span{display:inline-block;width:76px;overflow:hidden;height:28px;text-overflow:ellipsis;white-space:nowrap;}
+/*
+.input-select>ul{width: 100%;z-index: 10;border: 1px solid #E8E8E8;background: #fff;border-top: 0;}
+.input-select>ul>li{border-top: 1px solid #E8E8E8;}
+.input-select>ul>li:first-child{border-top:0;}
+.input-select>ul>li>a{display: block;height: 24px;line-height: 24px;padding: 0 8px;}
+ */
+
+.result-panel{width: 360px;background: #fff;box-shadow: 0px 0px 8px #d6d5d2;box-sizing:border-box;margin-top: 10px;padding-top:10px;position:relative;}
+.result-title{font-size: 16px;color: #333;padding:10px 10px 15px;font-weight: bold;}
+.tab-title>a{display: block;float: left;width: 179.5px;height: 40px;line-height: 40px;background: #fff;font-size: 14px;color: #333333;border:1px solid #ebebeb;border-left:0;border-right: 0;text-align: center;}
+.tab-title>a.current{background: #efefef;color: #f10011;font-weight: bold;}
+.tab-cont{width: 360px;height: 400px;overflow-y:auto;margin-top: 10px;font-size: 14px;line-height: 24px;}
+.infobox{margin-bottom: 15px;width: 100%;border-bottom: 1px solid #f2f2f2;padding-bottom: 10px;position:relative;cursor: pointer;}
+.infobox>h4{background: #efefef;font-size: 14px;color: #333;line-height: 30px;padding:0 10px;font-weight: bold;margin-bottom: 5px;}
+.infobox>p>span{display: inline-block;width: 80px;text-align: right;}
+.infobox .menu-edit{color: #1685f8;font-size: 14px;display: block;padding-left: 24px;background: url(../img/icon-edit.png) no-repeat left center;margin-left: 10px;}
+.infobox .underline{border-bottom:1px solid #D6000F;color:#D6000F;}
+i.marked{display: block;width: 74px;height: 63px;position: absolute;bottom:0;right: 0;}
+i.marked.m-gap{background: url(../img/gap.png) no-repeat;}
+i.marked.m-supply{background: url(../img/supply.png) no-repeat;}
+
+.result-control{border-top:3px solid #f7f7f7;position: relative;}
+a.btn-control{display: block;width: 83px;height: 18px;background: url(../img/slideBg.png) no-repeat;position: absolute;top:-3px;left:50%;margin-left: -41.5px;z-index: 50;}
+a.btn-control>.icon{display: block;width: 13px;height: 11px;background: url(../img/slideUp.png) no-repeat;position: absolute;top:3px;left:50%;margin-left: -7.5px;-webkit-transition: all .4s;transition: all .4s;}
+.slideUp a.btn-control>.icon{-webkit-transform:rotate(-180deg);transform:rotate(-180deg);}
+
+.result-variety{width: 360px;height: 430px;overflow-y:auto;}
+.result-variety li{line-height: 39px;height: 39px;padding:0 10px;font-size: 14px;border-bottom: 1px solid #ebebeb;overflow: hidden;}
+.result-variety li:hover{background:#f5f3f0;}
+.result-variety li>a{display: block;}
+.result-variety li .help{float:right;}
+.result-variety li .help>.iconfont{margin-top: 2px;float: right;}
+.result-variety li .title>b{color: #d6000f;font-weight: normal;}
+.bdmap{background: #fff; color: #333; z-index: 999;}
+.bdmap h3{height: 40px; line-height: 40px; background-color: #F10011; color: #fff; font-size: 15px; padding: 0 20px;font-weight: normal;}
+.bdmap ul li{line-height: 25px;text-align: left;}
+.bdmap ul{padding: 20px 30px;font-size:14px;}
+.bdmap ul li span{text-align: right; width: 75px; display: inline-block;}
+.bdmap ul li p{white-space:normal;}
+.search_combo{position: absolute; background-color: #fff;z-index:999; border: 1px solid #d6000f;border-top:none;}
+.search_combo ul li{height:25px;line-height:25px;font-size: 14px;padding-left: 10px;cursor: pointer;}
+.search_combo_li{background-color: #EEEEEE;}
+/* 20170612新增引导 */
+.guide-wrapper{position:fixed;top:0;left:0;width:100%;height:100%;z-index:999999;display:none;}
+.shade-wrap{position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6) none repeat scroll !important;background:#000; filter:Alpha(opacity=60);}
+.step1{position:absolute;top:167px;left:0;width:723px;height:284px;background:url(../img/guide/step1.png) no-repeat;}
+.step2{position:absolute;top:225px;left:0;width:619px;height:272px;background:url(../img/guide/step2.png) no-repeat;display:none;}
+.step3{position:absolute;top:225px;left:0;width:1236px;height:651px;background:url(../img/guide/step3.png) no-repeat;display:none;}
+.step4{position:absolute;top:339px;left:0;width:952px;height:503px;background:url(../img/guide/step4.png) no-repeat;display:none;}
+.guide-left{
+	left:40px;
+	position:absolute;
+}
+/* 20170705区分搜索模块 */
+.search-item>a{display: block;float: left;width: 179.5px;height: 48px;line-height: 48px;background: #fff;font-size: 16px;color: #333333;border-left:0;border-right: 0;text-align: center;}
+.search-item>a.current{font-weight: bold;background-color: #D6000F;color: #fff;}
+.btn-back{display: inline-block;padding-right: 5px;}
+.btn-back i{font-size: 20px;}
+.info-tip{font-weight: normal;display: inline-block;border: 1px solid #D6000F;line-height: 16px;font-size: 12px;padding: 0 3px;color:#D6000F;margin-left: 3px;}
+.tab-title>a .tipso_style{border-bottom:0;}
+
+.BMap_cpyCtrl{display:none;}
+.anchorBL{display:none;}
+.nothing img{width:200px;}
+.nothing{text-align:center;}
+.nothing p{text-align:center;}
+.BMapLabel p{text-align:center;}
+
+/* 20180315资源地图纠错与申报 */
+body{font-family:"Microsoft Yahei";}
+.lh-34{line-height:34px;}
+.border-bottom-0{border-bottom:0 !important;}
+.form-inline .form-control{display:inline-block;}
+.form-inline .input-group{display: inline-table;}
+.c-007FFF{color: #007FFF !important;}
+
+.km-header-link a{line-height:100px;font-size:16px;padding-left: 30px;color:#333;position:relative;}
+.km-header-link a:hover{color:#CB0310;}
+.km-header-link a .icon-new{position:absolute;top:-13px;right:-25px;display:block;width: 28px;height:17px;background:url(../img/icon-new.png) no-repeat;}
+.dec-title{font-size:28px;margin-bottom: 20px;margin-top: 30px;font-weight:bold;border-left:5px solid #CB0310;padding-left: 15px;}
+.dec-wrapper{border:1px solid #c9c9c9;padding:10px 30px;margin-bottom: 20px;}
+.dec-subtitle{font-size:20px;font-weight:bold;margin-bottom: 20px;color:#CC0D19;}
+.red{color:red !important;}
+.form-dec .form-control,.form-dec .input-group{width:350px;}
+.form-dec .form-block{width:500px;}
+.form-dec .form-middle{width:220px;}
+.form-dec .form-short{width:113px;}
+.form-dec .label-text{font-weight:normal;width:120px;text-align:right;color:#666;vertical-align: top;line-height:34px;}
+.form-dec .form-group{max-width:785px;}
+.form-inline .input-table{display: inline-table;vertical-align: middle;}
+.form-dec .plan-div{font-size:0;margin-bottom: 10px;}
+.form-dec .plan-div:last-child{margin-bottom: 0;}
+.form-dec .plan-div .plan-add{top: 9px;font-size:16px;cursor:pointer;padding-left: 5px;color:#cb0210;}
+.form-dec .radio-inline{line-height:34px;}
+.form-dec .radio-inline input[type=radio]{top:7px;}
+.form-dec .help-block{display:inline-block;margin-left: 10px;}
+.has-feedback label~.form-control-feedback{top:1px;}
+.has-feedback .form-control{padding-right: 0;}
+.inline-map{width:350px;height:135px;border:1px solid #c9c9c9;margin-bottom: 10px;}
+.modal-map{height: 340px;}
+.modal-350{width:350px;}
+.plan-tip{color:#999;padding-top:8px;display:inline-block;font-size:14px;height:36px;vertical-align:middle;display:none;}
+.upload-wrap .plan-tip{vertical-align: bottom;}
+.dec-success{width:100%;margin:180px auto;}
+.dec-success-text{text-align:center;}
+.dec-success-text p{font-size:14px;margin-top: 20px;}
+.dec-success-text .large{font-size:26px;letter-spacing: 2px;}
+
+.btn-addpic{display:inline-block;width:90px;height:68px;border:1px solid #c9c9c9;border-radius: 4px;text-align:center;line-height:68px;color:#ccc;vertical-align:middle;position:relative;}
+.btn-addpic input{display:block;width:100%;height:100%;position:absolute;top:0;left:0;opacity:0;z-index:1;filter:alpha(opacity=0);}
+.btn-addpic:hover{border-color:#23527c;}
+.btn-addpic .glyphicon-plus{font-size:20px;}
+
+.upload-pic{margin-top: 10px;}
+.upload-pic-opa{width:90px;height:68px;margin-right:5px;position:relative;display:inline-block;}
+.upload-pic-opa i{text-decoration: none;position:absolute;top:-7px;right:-7px;z-index:100;}
+.upload-pic-opa .img-thumbnail{width:90px;height:68px;}
+
+.BMap_contextMenu>div{}
+.BMap_contextMenu>div span{padding-left: 25px !important;line-height:30px !important;display:block;}
+.BMap_contextMenu>div:nth-child(1) span{background:url(../img/icon-chan.png) no-repeat left center;}
+.BMap_contextMenu>div:nth-child(2) span{background:url(../img/icon-gong.png) no-repeat left center;}
+.has-error .plan-div .form-control-feedback{font-size:14px;right:-288px;}
