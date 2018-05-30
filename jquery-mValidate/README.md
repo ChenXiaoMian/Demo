@@ -11,6 +11,6 @@
 - [x] 按顺序显示错误项提示
 - [x] 未通过验证不能提交
 
-[直接点击demo](http://htmlpreview.github.io/?https://github.com/ChenXiaoMian/demo/blob/master/mValidate/index.html)
+[直接点击demo](http://htmlpreview.github.io/?https://github.com/ChenXiaoMian/demo/blob/master/jquery-mValidate/index.html)
 
 记录一下~
